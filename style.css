@@ -85,7 +85,7 @@ body {
 		FadeIn 0.5s ease-out;
   }
 .navbar div a:hover {
-    color: #c0c0c0;
+    color: #ffff00;
     padding: 14px 24px;
     text-shadow: 0px 2px black;
 	font-size: 28;
@@ -111,12 +111,25 @@ body {
 .HomeText1 {
 	font-size: 48px;
 	position: absolute;
-	top: 380px;
+	top: 350px;
 	left: 0px;
 	right: 0px;
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 0;	
+	animation:
+		FadeIn 0.5s ease-out;
+}
+
+.HomeVideo1 {
+	position: absolute;
+	top: 475px;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
 	animation:
 		FadeIn 0.5s ease-out;
 }
