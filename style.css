@@ -1,0 +1,141 @@
+@keyframes FadeIn {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+@keyframes FadeOut {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+@keyframes BannerMove {
+  from {top: 20px;}
+  to {top: 40px;}
+ }
+
+img {
+    image-rendering: pixelated;
+}
+
+@font-face {
+    font-family: '8bitoperator JVE';
+    src: url('Assets/Fonts/8bitoperator-JVE.woff');
+}
+@font-face {
+    font-family: '8bitoperator Reg';
+    font-size: 100%;
+    src: url('Assets/Fonts/8bitOperatorPlus-Regular.woff');
+}
+
+body {
+	text-rendering: pixelated;
+    background-image: url('sset/bg.gif');
+    background-size: cover;
+    color: white;
+    font-family: '8bitoperator JVE';
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+	font-size: 32px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.navbar {
+	overflow: hidden;
+	max-height: 50px;
+	min-height: 50px;
+	position: fixed;
+	background-color: black;
+	border-bottom-width: 3px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+	justify-content: space-around;
+    align-content: center;	
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar div{
+	margin-top: 4px;
+    width: auto;
+    height: 75px;
+    margin-right: auto;
+    margin-left: auto;
+	animation:
+		FadeIn 0.5s ease-out;
+}
+.navbar div a {
+    color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px black;
+	animation:
+		FadeIn 0.5s ease-out;
+  }
+.navbar div a:hover {
+    color: #c0c0c0;
+    padding: 14px 24px;
+    text-shadow: 0px 2px black;
+	font-size: 28;
+}
+
+/* HOME */
+
+.HomeBanner {
+	display: block;
+	position: absolute;
+    top: 40px;	
+	left: 0px; 
+	right: 0px;
+	width: 1464px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+	animation:
+		BannerMove 0.5s ease-out,
+		FadeIn 0.5s ease-out;
+}
+
+.HomeText1 {
+	font-size: 48px;
+	position: absolute;
+	top: 380px;
+	left: 0px;
+	right: 0px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	animation:
+		FadeIn 0.5s ease-out;
+}
+
+/* Links */
+a:link {
+  color: #ffff00;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffff00;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff9d00;
+  text-decoration: none;
+}
+a:active {
+  color: #ffff00;
+  text-decoration: none;
+}
+
